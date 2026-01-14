@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gas Agency Booking System-vs</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Outfit', sans-serif; background:#f8f9fe; }
+    .gradient { background: linear-gradient(120deg ,red,gold,gold,gold,orange); }
+    .card { background:white; border-radius:16px; box-shadow:0 20px 40px rgba(0,0,0,.1); }
+    .badge { padding:6px 14px; border-radius:999px; font-size:13px; font-weight:600; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="gradient text-white p-6">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div>
+      <h1 class="text-3xl font-bold">BlueFire Gas Agency</h1>
+      <p class="text-blue-100">Your Trusted Energy Partner</p>
+    </div>
+    <div class="text-right">
+      <p class="font-semibold">📞 1800-GAS-HELP</p>
+      <p class="text-sm">contact@bluefiregas.com</p>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="bg-white border-b">
+  <div class="max-w-7xl mx-auto flex gap-8 px-6">
+    <button class="tab font-semibold py-4" onclick="showTab('home')">🏠 Home</button>
+    <button class="tab font-semibold py-4" onclick="showTab('book')">📝 Book</button>
+    <button class="tab font-semibold py-4" onclick="showTab('orders')">📦 Orders</button>
+    <button class="tab font-semibold py-4" onclick="showTab('track')">🚚 Track</button>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<main class="max-w-7xl mx-auto p-6">
+
+<!-- HOME -->
+<section id="home">
+    <header class="gradient text-white">
+  <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+    <div>
+      <h1 class="text-3xl font-bold">BlueFire Gas Agency</h1>
+      <p class="text-blue-100">Your Trusted Energy Partner</p>
+    </div>
+    <a  onclick="showTab('book')" class="bg-white text-purple-700 px-5 py-2 rounded-lg font-semibold">
+      Book Gas
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+  <div>
+    <h2 class="text-4xl font-bold text-gray-800 mb-4">
+      Fast & Reliable Gas Delivery
+    </h2>
+    <p class="text-gray-600 mb-6">
+      Book LPG cylinders online, track delivery in real-time, and manage your orders easily.
+    </p>
+
+    <div class="flex gap-4">
+      <a onclick="showTab('book')" class="gradient text-white px-6 py-3 rounded-lg font-bold">
+        Book Now
+      </a>
+      <a href="#services" class="border border-purple-600 text-purple-600 px-6 py-3 rounded-lg font-bold">
+        Learn More
+      </a>
+    </div>
+  </div>
+
+  
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">
+      Why Choose Us?
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-slate-50 p-8 rounded-xl shadow hover:-translate-y-1 transition">
+        <div class="text-4xl mb-4">🚚</div>
+        <h4 class="text-xl font-bold mb-2">Quick Delivery</h4>
+        <p class="text-gray-600">Get gas delivered within 24–48 hours.</p>
+      </div>
+
+      <div class="bg-slate-50 p-8 rounded-xl shadow hover:-translate-y-1 transition">
+        <div class="text-4xl mb-4">📦</div>
+        <h4 class="text-xl font-bold mb-2">Easy Booking</h4>
+        <p class="text-gray-600">Simple and fast online gas booking.</p>
+      </div>
+
+      <div class="bg-slate-50 p-8 rounded-xl shadow hover:-translate-y-1 transition">
+        <div class="text-4xl mb-4">📱</div>
+        <h4 class="text-xl font-bold mb-2">Live Tracking</h4>
+        <p class="text-gray-600">Track your order status anytime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="py-20 bg-slate-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">
+      Gas Cylinder Pricing
+    </h3>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow">
+        <h4 class="text-xl font-bold mb-2">Domestic LPG (14.2kg)</h4>
+        <p class="text-gray-600 mb-4">Ideal for home cooking</p>
+        <p class="text-3xl font-bold text-purple-600">₹850</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow">
+        <h4 class="text-xl font-bold mb-2">Commercial LPG (19kg)</h4>
+        <p class="text-gray-600 mb-4">For hotels & businesses</p>
+        <p class="text-3xl font-bold text-purple-600">₹1,650</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="gradient text-white py-16 text-center">
+  <h3 class="text-3xl font-bold mb-4">Ready to Book Your Gas?</h3>
+  <p class="mb-6">Safe, fast, and reliable gas delivery at your doorstep</p>
+  <a onclick="showTab('book')" class="bg-white text-purple-700 px-8 py-3 rounded-lg font-bold">
+    Book Gas Now
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-6">
+  <div class="max-w-7xl mx-auto px-6 flex justify-between text-sm">
+    <p>© 2026 BlueFire Gas Agency</p>
+    <p>📞 1800-GAS-HELP</p>
+  </div>
+</footer>
+</section>
+
+<!-- BOOK -->
+<section id="book" class="hidden">
+  <div class="card p-8 max-w-2xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6">Book Gas Cylinder</h2>
+
+    <form id="bookingForm">
+      <input id="name" placeholder="Full Name" class="w-full border p-3 rounded mb-3" required />
+      <input id="phone" placeholder="Phone Number" class="w-full border p-3 rounded mb-3" required />
+      <textarea id="address" placeholder="Delivery Address" class="w-full border p-3 rounded mb-3" required></textarea>
+
+      <select id="type" class="w-full border p-3 rounded mb-3" required>
+        <option value="">Select Cylinder</option>
+        <option value="Domestic|850">Domestic LPG - ₹850</option>
+        <option value="Commercial|1650">Commercial LPG - ₹1650</option>
+      </select>
+
+      <input id="qty" type="number" value="1" min="1" class="w-full border p-3 rounded mb-3" />
+      <input id="date" type="date" class="w-full border p-3 rounded mb-3" required />
+
+      <p class="font-semibold mb-4">Total: <span id="total">₹0</span></p>
+
+      <button class="gradient text-white w-full py-3 rounded font-bold">Place Order</button>
+    </form>
+
+    <p id="success" class="hidden mt-4 text-green-600 font-semibold"></p>
+  </div>
+</section>
+
+<!-- ORDERS -->
+<section id="orders" class="hidden">
+  <h2 class="text-2xl font-bold mb-4">My Orders</h2>
+  <div id="ordersList" class="space-y-4"></div>
+</section>
+
+<!-- TRACK -->
+<section id="track" class="hidden">
+  <div class="card p-6 max-w-xl mx-auto">
+    <input id="trackId" placeholder="Enter Order ID" class="w-full border p-3 rounded mb-3" />
+    <button onclick="trackOrder()" class="gradient text-white w-full py-3 rounded">Track</button>
+    <div id="trackResult" class="mt-4"></div>
+  </div>
+</section>
+
+</main>
+
+<script>
+const tabs = ['home','book','orders','track'];
+function showTab(id){ tabs.forEach(t=>document.getElementById(t).classList.add('hidden')); document.getElementById(id).classList.remove('hidden'); if(id==='orders') renderOrders(); }
+
+const typeEl = document.getElementById('type');
+const qtyEl = document.getElementById('qty');
+const totalEl = document.getElementById('total');
+
+function updateTotal(){
+  if(!typeEl.value) return totalEl.textContent='₹0';
+  const price = typeEl.value.split('|')[1];
+  totalEl.textContent = '₹' + (price * qtyEl.value);
+}
+
+typeEl.onchange = updateTotal;
+qtyEl.oninput = updateTotal;
+
+document.getElementById('date').min = new Date().toISOString().split('T')[0];
+
+// PLACE ORDER
+document.getElementById('bookingForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const orders = JSON.parse(localStorage.getItem('orders')) || [];
+
+  const [cyl, price] = typeEl.value.split('|');
+
+  const order = {
+    id: 'ORD' + Date.now(),
+    name: name.value,
+    phone: phone.value,
+    address: address.value,
+    type: cyl,
+    qty: qty.value,
+    total: price * qty.value,
+    date: date.value,
+    status: 'Pending'
+  };
+
+  orders.push(order);
+  localStorage.setItem('orders', JSON.stringify(orders));
+
+  success.textContent = `✅ Order placed successfully! Order ID: ${order.id}`;
+  success.classList.remove('hidden');
+  bookingForm.reset();
+  updateTotal();
+});
+
+// RENDER ORDERS
+function renderOrders(){
+  const orders = JSON.parse(localStorage.getItem('orders')) || [];
+  ordersList.innerHTML = orders.length ? orders.map(o=>`
+    <div class="card p-4">
+      <div class="flex justify-between">
+        <div>
+          <h3 class="font-bold">${o.id}</h3>
+          <p>${o.type} × ${o.qty}</p>
+          <p>₹${o.total}</p>
+        </div>
+        <span class="badge bg-yellow-100 text-yellow-800 pt-5">${o.status}</span>
+      </div>
+    </div>
+  `).join('') : '<p>No orders yet</p>';
+}
+
+// TRACK ORDER
+function trackOrder(){
+  const id = trackId.value.trim();
+  const orders = JSON.parse(localStorage.getItem('orders')) || [];
+  const o = orders.find(x=>x.id===id);
+  trackResult.innerHTML = o ? `<p class="font-semibold">Status: ${o.status}</p>` : `<p class="text-red-500">Order not found</p>`;
+}
+</script>
+
+</body>
+</html>
